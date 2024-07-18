@@ -1,0 +1,6 @@
+# Example .gitignore content
+**/.*history
+**/*.log
+**/*.secret
+**/id_rsa
+**/known_hosts

@@ -1,0 +1,73 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+
+# Font configuration (Iosevka Nerd Font)
+[font]
+# Normal (roman) font face
+normal = { family = "Iosevka Nerd Font" }
+
+# Bold font face
+bold = { family = "Iosevka Nerd Font" }
+
+# Italic font face
+italic = { family = "Iosevka Nerd Font", style = "Italic" }
+
+# Font size
+size = 12.0
+
+# Font size increment for the offset of the extra padding
+offset = { x = 0, y = 0 }
+
+# Custom glyph offsets (due to alignment or positioning issues)
+glyph_offset = { x = 0, y = 0 }
+
+# Tab spaces (remove if it causes issues, as Alacritty might not support this key directly)
+# tabspaces = 4
+
+# Window dimensions (change to your preference)
+[window]
+dimensions = { columns = 80, lines = 24 }
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+decorations = "none"
+startup_mode = "Windowed"
+
+# Scrolling
+[scrolling]
+history = 10000
+multiplier = 3
+
+# Colors (example color scheme, customize as desired)
+[colors]
+# Default colors
+primary = { background = "#282a36", foreground = "#f8f8f2" }
+
+# Normal colors
+[colors.normal]
+black   = "#000000"
+red     = "#ff5555"
+green   = "#50fa7b"
+yellow  = "#f1fa8c"
+blue    = "#bd93f9"
+magenta = "#ff79c6"
+cyan    = "#8be9fd"
+white   = "#bbbbbb"
+
+# Bright colors
+[colors.bright]
+black   = "#555555"
+red     = "#ff6e6e"
+green   = "#69ff94"
+yellow  = "#ffffa5"
+blue    = "#d6acff"
+magenta = "#ff92d0"
+cyan    = "#a4ffff"
+white   = "#ffffff"
+
+# Cursor configuration
+[cursor]
+style = "Block"  # Change to "Underline", "Beam", or "Block"
+unfocused_hollow = true
+
+# Mouse configuration
+[mouse]
+hide_when_typing = true
